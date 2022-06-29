@@ -1,0 +1,21 @@
+var b : bool
+
+fun main(i:int):int =
+	i=0;
+	if(i==0) then
+		#if i%2==0 then
+			#putInt(1)
+		#else
+			#putInt(0)
+		#end;
+		i=i+1;
+		putInt(i)
+	end
+: 0
+
+fun test(i:int):void=
+	putInt(i)
+: none
+
+fun putInt(num:int):void
+

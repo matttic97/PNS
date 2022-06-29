@@ -1,0 +1,13 @@
+var b : bool
+
+fun main():int =
+	b = undef;
+	if(undef == undef) then putInt(7) end;
+	if(b != false) then putInt(1) end;
+	getChar()
+: 0
+
+fun putInt(num:int):void
+fun getChar():char
+
+

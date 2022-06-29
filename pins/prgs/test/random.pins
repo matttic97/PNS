@@ -1,0 +1,98 @@
+# RANDOM GENERATOR
+
+var k:int
+var rnd1:int
+var rnd2:int
+var rnd3:int
+var rnd4:int
+var sum1:int
+var sum2:int
+var sum3:int
+var sum4:int
+var i:int
+
+fun putChar(c:char):void
+fun putInt(num:int):void
+
+fun main():int =
+	printTitle();
+	sum1=0;
+	sum2=0;
+	sum3=0;
+	sum4=0;
+	i=0;
+	while(i<10) do
+		sum1 = sum1+rand1(420);
+		sum2 = sum2+rand2(420);
+		sum3 = sum3+rand3(420);
+		sum4 = sum4+rand4(420);
+		k = (((sum2*sum4)+(sum1*sum3))%420);
+		putInt(k);
+		i = i+1;
+		putChar(',');
+		putChar(' ')
+	end;
+putChar((10 : char))
+: 0
+
+fun rand1(lim:int):int=
+	a = 100001;
+        a = (a * 125) % 11;
+	a = ((a % lim) + 1)
+: a { where var a : int }
+
+fun rand2(lim:int):int=
+	a = 3;
+        a = ((a * 214013 + 80315));
+	a = ((a % lim) + 1)
+: a { where var a : int }
+
+fun rand3(lim:int):int=
+	a = 1; 
+        a = (a * 32719 + 3) % 32749;
+	a = ((a % lim) + 1)
+: a { where var a : int }
+
+fun rand4(lim:int):int=
+	a = 100001;
+        a = (a * 125) % 34693;
+	a = ((a % lim) + 1)
+: a { where var a : int }
+
+fun printTitle():void =
+	putChar('N');
+	putChar('a');
+	putChar('k');
+	putChar('l');
+	putChar('j');
+	putChar('u');
+	putChar('c');
+	putChar('n');
+	putChar('a');
+	putChar(' ');
+	putChar('s');
+	putChar('t');
+	putChar('e');
+	putChar('v');
+	putChar('i');
+	putChar('l');
+	putChar('a');
+	putChar(' ');
+	putChar('m');
+	putChar('e');
+	putChar('d');
+	putChar(' ');
+	putChar('1');
+	putChar('5');
+	putChar(' ');
+	putChar('i');
+	putChar('n');
+	putChar(' ');
+	putChar('4');
+	putChar('2');
+	putChar('0');
+	putChar(':');
+	putChar((10 : char))
+:none
+
+

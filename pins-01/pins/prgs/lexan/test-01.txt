@@ -1,0 +1,54 @@
+void a = none;
+
+
+bool b = true;
+
+#kot da me ni
+;
+b=false;
+
+char arr     
+	c[] ;
+
+int main(){
+
+    
+do  {
+        
+
+
+del c[0]
+       
+ ptr 
+        
+if else
+        
+ifelse
+        
+typ>where
+    
+}while(groza+n	>	
+new Object(int a));
+}
+
+id_z_podcrtaji
+arr 
+bool char del do else end fun if int new ptr then
+typ var 
+where false
+
+deli'prosm'te 
+#komentar ki ga je treba ignorirati
+
+st 
+
+	
+v;
+int ;none>><<>=>
+
+then 
+324+123
+1 * 2
+3- sf4
+5 /63 xx;
+

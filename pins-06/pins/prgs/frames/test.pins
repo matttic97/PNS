@@ -1,0 +1,12 @@
+var a:int
+var b:arr[10] int
+var c:char
+fun test():int = 
+	a = main(a,c,a);
+	b[a] = 6
+	:a
+
+fun main(a:int, b:char, c:int):int = 
+	a = test();
+	b = 'a'
+	: a

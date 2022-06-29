@@ -1,0 +1,44 @@
+var d: int
+var e: c
+var tab: y
+var tab2: arr[10] int
+var i: char
+var j: z
+#var test: g
+
+fun f1(d : a, e : c) : c =
+    d = d + 2;
+    d = +(d % 2);
+    x(13, j) >= '3';
+    ( i : c );
+    d = 5;
+    d = @(j);    nicVrne(3);
+    i = (x(3, j) : char);
+    while d == ('2' + '3') do
+            if ((5 - 2) == 3) then
+                x(10, j) = '1';
+                nicVrne(5);
+                d = 1 + 1
+            else
+                e = x(13, new(int));
+                nicVrne(6);
+                e = 't'
+            end
+        end;
+    j = new(int);
+    del(i + 'c');
+    i = '5';
+    tab[@j];
+    tab2[0+1] = (3 + 4) / 2
+: e { where var t: int typ g: char }
+
+fun x(f : int, g : z): c
+
+fun nicVrne(m : int): void
+
+typ a: b
+typ b: int
+typ c: char
+typ gg: void
+typ y: arr[5] char
+typ z: ptr a

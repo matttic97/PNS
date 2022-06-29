@@ -1,0 +1,7 @@
+fun f1(i:int):int
+var c:t
+typ e:t
+typ t:int
+var a:int
+fun f2(i:t):int =
+i = f2(c + f1(i)) : i

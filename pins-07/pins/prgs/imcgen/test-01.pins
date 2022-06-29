@@ -1,0 +1,18 @@
+var a : int
+var p : int
+var b : bool
+var c : char
+
+fun main(x:int) : int =
+    a = a + 1;
+    b = false;
+    c='A';
+    while a > 3 do
+            if 3 % 2 == 0
+            then
+                p = a * a
+            else
+                p = a - a
+            end
+        end
+: a

@@ -1,0 +1,23 @@
+ var operator : char
+    var firstNumber : int
+    var secondNumber:int
+    typ bla:bool
+   var seznam : arr[(32 : ( ptr stevilo2)) [ new ( arr[ polje ( del (22), ime, priimek, (-belo :bool))] void)]] int
+fun testnafunkcija () : char
+fun testna2 ( balota : int, balota2: bool, test3:char) : ptr int = 2492 : randomneki
+fun inc1 ( n : int) : int = numbers = b + 1 * 5 / 3 % 2 + 1 + 2 - 2 % 2 == true * 5 : n
+fun inc2 ( n:int) : int = m = n*2:m { where var m:int}
+fun inc2 ( n:int) : int = while true do 
+  if count % 2 == 0 + a + b + c
+  then
+    i1 = i2 - i3 - 1 - 3 - 4
+  else
+    i2 = -i1 / i2 * 3 % 4 * 5
+  end;
+  if C(1/2, @Bala) == true
+  then
+    a = b + 1
+  end
+end : x { where typ x:x }
+fun inc3 ( n : int) : int = while true do c = a + -b == 256 end : 'c' 
+fun inc3 ( n : int) : int = while true do c = a + -b * a[-5] * new(int) - del(-1) -5 / 2 == 256 end : 'c'

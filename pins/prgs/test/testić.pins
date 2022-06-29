@@ -1,0 +1,8 @@
+var a: arr[1] int
+
+fun main():void=
+    a[0] = 1;
+    putInt(a[0])
+:none
+
+fun putInt(m:int): void

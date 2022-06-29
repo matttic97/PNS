@@ -1,0 +1,49 @@
+var a: int
+var p : ptr void
+fun main() : int =
+    a = a + 1;
+    a = 3;
+    main()
+: a
+
+fun f(a : int, b: int, c:int) : int = 
+	sum = f(a, b, c)
+: sum { where 
+	var sum: int
+	var array: arr [10] arr [10] int 
+	fun g(a: int, b: char, c: ptr int) : ptr void =
+		i = null
+	: i { where
+		var i : ptr void
+	}
+}
+
+var z : char
+
+fun f1(a : int, b: int, c:int) : int = 
+	sum = f(a, b, c)
+: sum { where 
+	var sum: int
+	var array: arr [10] int 
+	fun g(a: int, b: char, c: ptr int) : ptr void =
+		i = null
+	: i { where
+		var i : ptr void
+		fun h(a: int, b: char, c: ptr int) : ptr void =
+		i = null
+		: i { where
+			var sum: int
+			var sum22: int
+			var sum33: int
+			var sum44: int
+			var i : ptr void
+			fun j(a: int, b: char, c: ptr int) : ptr void =
+			sum = f(a, b, c)
+			: i { where
+				var sum: int
+				var sum2: int
+				var i : ptr void
+			}
+		}
+	}
+}

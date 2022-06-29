@@ -1,0 +1,17 @@
+
+var r1: int
+var r2: int
+var count: int
+
+fun fibb (n:int , x: bool) : int =
+	count = n;
+	res = -1+0+0+0 + 2;
+	while count > 2 do
+		if count % 2 == 0 
+		then
+			r1 = r1 + r2
+		else
+			r2 = r1 + r2
+		end
+	end
+: x { where typ x : x }

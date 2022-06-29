@@ -1,0 +1,79 @@
+# QuickSort
+
+var size:int
+var num:arr[14]int
+
+fun putInt(num:int):void
+fun putChar(c:char):void
+
+
+fun main() : int = 
+    generate();
+    print();
+    sort(0, 13);
+    print()
+: 0
+
+fun partition(l:int, h:int):int =
+    p = num[h];
+    i = (l-1);
+    j=l;
+    while(j<h) do
+        if(num[j] <= p) then
+            i = i+1;
+            swap(i, j)
+        end;
+        j = j+1
+    end;
+    i = i+1;
+    swap(i, h)
+: i { where var p:int var i:int var j:int var tmp:int}
+
+fun sort(l:int, h:int):void =
+    if(l < h) then
+        p = partition(l, h)-1;
+        sort(l, p);
+        p = p+2;
+        sort(p, h)
+    end
+: none { where var p:int }
+
+fun swap(i:int, j:int):void =
+    tmp = num[i];
+    num[i] = num[j];
+    num[j] = tmp
+:none { where var tmp:int }
+
+fun generate():void =
+    size = 0;
+    add(2);
+    add(66);
+    add(13);
+    add(35);
+    add(7);
+    add(100);
+    add(29);  
+    add(86);
+    add(291);
+    add(18);
+    add(56);
+    add(48);
+    add(77);
+    add(162)
+: none
+
+fun add(i:int):void=
+    num[size] = i;
+    size = size+1
+: none
+
+fun print():void =
+    i = 0;
+    while(i<size) do
+        putInt(num[i]);
+        putChar(',');
+        putChar(' ');
+        i = i+1
+    end;
+    putChar((10 : char))
+:none { where var i:int }

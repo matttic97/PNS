@@ -1,0 +1,7 @@
+var i:int
+
+fun main():int =
+	where{
+		var d:int
+	}
+i : main()

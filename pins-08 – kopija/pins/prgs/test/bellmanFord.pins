@@ -1,0 +1,75 @@
+# Iskanje najcenejse poti 1
+
+var INT_MAX : int
+var n : int
+var e:int
+var graph : arr[7] arr[3] int
+var dist : arr[5] int
+
+fun putChar(c:char):void
+fun putInt(num:int):void
+
+
+fun main() : int = 
+	INT_MAX = 20;
+	n = 5;
+	e=7;
+	generateGraph();
+	bellmanFord(0)
+: 0
+
+fun generateGraph() : void =
+	size = 0;
+	addEdge(0, 1, 2);
+	addEdge(0, 3, 6);
+	addEdge(1, 2, 1);
+	addEdge(1, 3, 2);
+	addEdge(2, 3, 1);
+	addEdge(2, 4, 1);
+	addEdge(3, 4, 1)
+: none
+
+var size:int
+fun addEdge(s:int, e:int, w:int):void=
+	graph[size][0] = s;
+	graph[size][1] = e;
+	graph[size][2] = w;
+	size = size+1
+:none
+
+fun bellmanFord(start:int) : void =
+	i = 0;
+	until(i<n) do
+		dist[i] = INT_MAX;
+		i = i+1
+	end;
+	dist[start] = 0;
+
+	i=1; j=0;
+	while(i<n) do 
+		while(j<e) do	
+			u = graph[j][0];
+			v = graph[j][1];
+			w = graph[j][2];	
+			if(dist[u] != INT_MAX) then
+				if ((dist[u] + w) < dist[v]) then
+					dist[v] = dist[u] + w
+				end
+			end;
+		j = j+1 
+		end;
+	i = i+1 
+	end;
+	printArr()
+: none { where var i:int var u:int var v:int var w:int var j:int}
+
+fun printArr():void = 
+	i=0;
+	while(i<n) do
+		putInt(dist[i]);
+		putChar(',');
+		putChar(' ');
+		i = i+1
+	end;
+	putChar((10 : char))
+:none { where var i:int }

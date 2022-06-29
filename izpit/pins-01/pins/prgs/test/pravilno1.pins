@@ -1,0 +1,7 @@
+
+fun main():int = 
+	putInt(line);
+	putInt(line)
+: 0
+
+fun putInt(i:int):void

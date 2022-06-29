@@ -1,0 +1,13 @@
+fun i() :int = 
+	x =a * b / c[d] + e - f % 3;
+	while c[1][hello][3+4+5] do
+		print('p' * x4 - x*4);
+		if x - 2 == 3 then
+			-x = +1
+		end
+	end
+:x + 2 { where
+	fun i2() : int = 
+		'c' = 4+1
+	: w { where var c: char }
+}

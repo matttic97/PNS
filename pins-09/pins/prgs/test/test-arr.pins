@@ -1,0 +1,10 @@
+var b : arr[1]arr[1]arr[1] int
+var a : arr[1]arr[1]arr[1] int
+
+fun main() : int =
+    b[0][0][0] = 0;
+    a[0][0][0] = 2;
+    putChar((a[b[0][0][0]][b[0][0][0]][b[0][0][0]] + 48 : char))
+: 0 { where var a : arr[1]arr[1]arr[1]int  var b : arr[1]arr[1]arr[1]int}
+
+fun putChar(c : char): void

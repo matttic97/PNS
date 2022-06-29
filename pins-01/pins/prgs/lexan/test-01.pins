@@ -1,0 +1,40 @@
+/**
+ * @author sliva
+ */
+package compilerphaseslexan;
+'''
+1x
+import javaio*;
+import javautilArrayList;
+import javautilArrays;
+import javautilQueue;
+
+import compilercommonreport*;
+import compilerdatasymbol*;
+import compilerphases*;
+
+/**
+ * Lexical analysis
+ * 
+ * @author sliva
+ */
+public class LexAn extends Phase {
+
+	/** The name of the source file */
+	private final String srcFileName;
+
+	/** The source file reader */
+	private final BufferedReader srcFile;
+
+	private int rLocation = 1;
+	private int srLocation = 1;
+	private int scLocation = 1;
+	private int erLocation = 1;
+	private int ecLocation = 1;
+	private int cLocation = 1;
+
+	/**
+	 * Constructs a new phase of lexical analysis
+	 */
+	public LexAn() {
+'æ

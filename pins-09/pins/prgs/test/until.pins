@@ -1,0 +1,16 @@
+
+fun main(i:int):int = 
+	i = 0;
+	until(i == 3) do
+		i = i+1;
+		putInt(i);
+		putChar(i)
+	end
+: 0
+
+fun putInt(num:int):void
+fun putChar(i:int):void =
+	if i==0
+	then	putChar(i-1)
+	end
+: none

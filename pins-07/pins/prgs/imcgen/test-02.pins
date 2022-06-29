@@ -1,0 +1,8 @@
+typ datNewType : int
+
+var oldone : int
+var datNewBoi : datNewType
+
+fun wauuu() : void =
+     datNewBoi = (oldone : datNewType)
+     : none

@@ -1,0 +1,10 @@
+
+fun main(i:int):int = 
+	i = 0;
+	while(line > i) do
+		i = i + 1;
+		putInt(i)
+	end
+: 0
+
+fun putInt(i:int):void

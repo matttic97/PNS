@@ -1,0 +1,86 @@
+Source -> Decls .
+
+Decls -> Decl DeclsRst .
+
+Decl -> typ identifier : Type .
+Decl -> var identifier : Type .
+Decl -> fun identifier ( ParDeclsEps ) : Type BodyEps .
+
+DeclsRst -> .
+DeclsRst -> Decls.
+
+ParDeclsEps -> .
+ParDeclsEps -> ParDecls .
+
+ParDecls -> ParDecl ParDeclsRest .
+
+ParDecl -> identifier : Type .
+
+ParDeclsRest -> .
+ParDeclsRest -> , ParDecls .
+
+BodyEps -> .
+BodyEps ->  = Stmts : RelExpr WhereEps .
+
+Type -> void | int | char | bool .
+Type -> arr [ RelExpr ] Type | ptr Type .
+Type -> identifier | ( Type ).
+
+RelExpr -> AddExpr RelExprRest.
+RelExprRest -> .
+RelExprRest -> eql AddExpr | neq AddExpr | lte AddExpr .
+RelExprRest -> mte AddExpr | < AddExpr | > AddExpr .
+
+AddExpr -> MulExpr AddExprRest.
+
+AddExprRest -> .
+AddExprRest -> + MulExpr AddExprRest | - MulExpr AddExprRest.
+
+MulExpr -> PrefExpr MulExprRest.
+
+MulExprRest -> .
+MulExprRest -> * PrefExpr MulExprRest | / PrefExpr MulExprRest | % PrefExpr MulExprRest .
+
+PrefExpr -> PstfExpr | + PrefExpr | - PrefExpr .
+PrefExpr -> @ PrefExpr | $ PrefExpr .
+
+PstfExpr -> Expr PstfExprRest .
+
+PstfExprRest -> .
+PstfExprRest -> [ RelExpr ] PstfExprRest .
+
+Expr -> AtomExpr | ( RelExpr CastEps ) .
+
+AtomExpr -> literal | new ( Type ) | del ( RelExpr ) | identifier CallEps .
+
+CallEps -> .
+CallEps -> ( ArgsEps ) .
+
+ArgsEps -> .
+ArgsEps -> Args ArgsRest .
+
+Args -> RelExpr .
+
+ArgsRest -> , Args ArgsRest .
+ArgsRest -> .
+
+CastEps -> .
+CastEps -> : Type .
+
+WhereEps -> { where Decls } .
+WhereEps -> .
+
+Stmts -> Stmt StmtsRest.
+
+Stmt -> RelExpr AssignEps .
+Stmt -> if RelExpr then Stmts ElseEps end .
+Stmt -> while RelExpr do Stmts end .
+
+StmtsRest -> .
+StmtsRest -> ; Stmts.
+
+AssignEps -> .
+AssignEps -> = RelExpr .
+
+ElseEps -> .
+ElseEps -> else Stmts .

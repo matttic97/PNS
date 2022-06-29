@@ -1,0 +1,4 @@
+var i:int
+
+fun main():int =
+	i = i + 2 : main()

@@ -1,0 +1,6 @@
+typ a:b
+typ b:int
+typ c:b
+var r:int
+fun f(v:int) : int =
+v = 3 : v

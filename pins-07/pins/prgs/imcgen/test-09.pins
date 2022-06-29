@@ -1,0 +1,5 @@
+var arr2d : arr[10] arr[10] int
+fun testArr2d(c:int, c2:int) : int =
+    c = 3;
+    c2 = 5
+: arr2d[2][3]
